@@ -49,18 +49,16 @@ In the ocean model, we use a [75-level vertical grid](https://github.com/COSIMA/
 The vertical spacing is generated using:
 
 $$
-\Delta z(z)
-= \Delta z_{\max}\\tanh\\left(-\frac{2\pi}{S_h} H_{\max}\right)
-+ \varepsilon 
+\Delta z(z) = \Delta z_{\max}\tanh\left(-\frac{2\pi}{S_h} H_{\max}\right) + \varepsilon 
 $$
 
 where \( \varepsilon = 10^{-3}\,\text{m} \).  
 
 The parameters used to generate the vertical grid correspond to:
 
-- \( H_{\max} = 6000\\text{m} \) — maximum ocean depth  
-- \( \Delta z_{\max} = 200\\text{m} \) — maximum layer thickness at depth  
-- \( \Delta z_{\min} = 1\\text{m} \) — minimum layer thickness at the surface  
+- \( H_{\max} = 6000m \) — maximum ocean depth  
+- \( \Delta z_{\max} = 200m \) — maximum layer thickness at depth  
+- \( \Delta z_{\min} = 1m \) — minimum layer thickness at the surface  
 - \( S_h \approx 1.101 \) — dimensionless stretching parameter controlling the “knee” depth and steepness of the tanh profile  
 
 These settings reproduce the standard OM2/OM3 75-level vertical grid used in ACCESS-OM2 and ACCESS-OM3 configurations.
