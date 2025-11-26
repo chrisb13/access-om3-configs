@@ -48,9 +48,7 @@ In the ocean model, we use a [75-level vertical grid](https://github.com/COSIMA/
 
 The vertical spacing is generated using:
 
-$$
-\Delta z(z) = \Delta z_{\max}\tanh\left(-\frac{2\pi}{S_h} H_{\max}\right) + \varepsilon 
-$$
+$\Delta z(z) = \Delta z_{\max}\\tanh\left(-\frac{2\pi}{S_h} H_{\max}\right) + \varepsilon$
 
 where \( \varepsilon = 10^{-3}\,\text{m} \).  
 
